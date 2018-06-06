@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="_3DWall.WallUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:wall="clr-namespace:_3DWall.Wall"
+             mc:Ignorable="d" 
+             >
+    <UserControl.Background>
+        <ImageBrush x:Name="_bgbrush" ImageSource="Assets/Seabed_016018.jpg"  />
+    </UserControl.Background>
+    <Grid>
+        <wall:MianWall x:Name="_mainwall" />
+        <Rectangle x:Name="_rec" Stretch="Fill" Fill="Bisque" Opacity=".3" Visibility="Collapsed" />
+        <Canvas  x:Name="_grid" >
+
+        </Canvas>
+    </Grid>
+</UserControl>
